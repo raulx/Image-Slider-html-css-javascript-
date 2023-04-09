@@ -10,10 +10,34 @@ body{
     height: 100vh;
     flex-direction: column;
     gap: 20px;
+    background-color: rgb(205,219, 216);
 }
 .slider-container{
+    position: relative;
     display: flex;
     width: 800px;
     height: 500px;
     overflow: hidden;
+}
+.slider{
+    display: flex;
+    position: absolute;
+    width: 2400px;
+    left: 0;
+    transition: transform 1s ease-in;
+}
+
+.slider-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.btn{
+    background-color: rgb(203,203,203);
+    padding: 20px;
+    border: none;
+}
+.btn:hover{
+    background-color: rgb(175, 175, 175);
 }
